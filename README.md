@@ -1,2 +1,6 @@
 # curator
-Curate content
+Curates content including:
+- Passwords
+- Contracts
+- Messages
+
