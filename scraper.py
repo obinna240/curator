@@ -10,6 +10,18 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(SCRIPT_DIR, "data")
 
 
+
+
+contract_status = {
+    "Open": 1,
+    "Closed": 2,
+    "Withdrawn": 4,
+    "Awarded": 8,
+    "Draft": 16,
+}
+
+
+
 def get_data(published_from, published_to):
     url = "https://www.contractsfinder.service.gov.uk/api/rest/2/search_notices/json"
     criteria = {
